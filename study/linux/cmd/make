@@ -1,0 +1,12 @@
+make install
+编译并安装
+
+make uninstall
+卸载
+
+make clean
+清除编译产生的可执行文件及目标文件
+
+make distclean
+除了清除可执行文件和目标文件外，把configure所产生的Makefile也清除掉。
+

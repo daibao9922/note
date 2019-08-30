@@ -1,0 +1,51 @@
+dnf install xx
+
+dnf update xx
+
+dnf list
+该命令用于列出用户系统上的所有来自软件库的可用软件包和所有已经安装在系统上的软件包
+
+dnf list installed
+该命令用于列出所有安装了的 RPM 包
+
+dnf search xx
+当你不知道你想要安装的软件的准确名称时，你可以用该命令来搜索软件包。你需要在”search”参数后面键入软件的部分名称来搜索。
+
+dnf provides /bin/bash
+当你想要查看是哪个软件包提供了系统中的某一文件时，你可以使用这条命令
+
+dnf reinstall xx
+
+dnf check-update
+该命令用于检查系统中所有软件包的更新
+
+dnf update
+该命令用于升级系统中所有有可用升级的软件包
+
+dnf remove nano
+删除系统中指定的软件包
+
+dnf clean all
+在使用 DNF 的过程中，会因为各种原因在系统中残留各种过时的文件和未完成的编译工程。我们可以使用该命令来删除这些没用的垃圾文件。
+
+dnf repolist
+查看系统中可用的 DNF 软件库
+
+dnf repolist all
+查看系统中可用和不可用的所有的 DNF 软件库
+
+dnf list available
+该命令用于列出来自所有可用软件库的可供安装的软件包
+
+dnf info xx
+当你想在安装某一个软件包之前查看它的详细信息时，这条命令可以帮到你。
+
+dnf help xx
+该命令用于获取有关某条命令的使用帮助
+
+dnf help
+
+dnf history
+
+dnf grouplist
+

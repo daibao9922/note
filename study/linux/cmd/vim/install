@@ -1,0 +1,21 @@
+1.安装依赖
+dnf install gcc
+dnf install ncurses-devel
+dnf install python-devel
+
+2.编译配置
+当前使用的配置命令：
+./configure \
+--prefix=/home/local/vim \
+--with-features=huge \
+--enable-multibyte \
+--enable-pythoninterp=yes \
+--enable-cscope
+
+备选项：
+--with-python-config-dir=/usr/lib/python2.7/config \
+--enable-python3interp=yes \
+--with-python3-config-dir=/usr/lib/python3.5/config \
+--enable-gui=gtk2 \
+
+3.make install

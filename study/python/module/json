@@ -1,0 +1,5 @@
+json_dict = json.load(file)
+json_dict = json.loads(str)
+
+json.dump(json_dict, file, indent = 4)
+str = json.dumps(json_dict)

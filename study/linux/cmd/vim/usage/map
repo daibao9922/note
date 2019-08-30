@@ -1,0 +1,16 @@
+[un]map
+[un]nmap(normal mode)
+[un]vmap(visual mode)
+[un]imap(insert mode)
+
+定义不递归解析的映射
+noremap
+nnoremap
+vnoremap
+inoremap
+
+
+<esc>
+<space>
+<c-d>
+<cr>     回车
