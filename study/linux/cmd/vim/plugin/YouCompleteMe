@@ -13,11 +13,19 @@ https://releases.llvm.org/5.0.1/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-14.04.t
 解压
 
 4.编译ycm_core
-cd ~/.vim/bundle/YouCompleteMe
+cd ~
 mkdir ycm_build
 cd ycm_build
-cmake -G "Unix Makefiles" -DPATH_TO_LLVM_ROOT=/root/.vim/bundle/YouCompleteMe/third_party/ycmd/clang_archives/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-14.04 . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+cmake -G 'Unix Makefiles' . ~/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp -DPYTHON_LIBRARY=/usr/lib/python3.7/config-3.7m-aarch64-linux-gnu/libpython3.7.so -DPYTHON_INCLUDE_DIR=/usr/include/python3.7 -DUSE_PYTHON2=OFF -DEXTERNAL_LIBCLANG_PATH=/usr/lib/llvm-7/lib/libclang.so.1
+# cmake -G "Unix Makefiles" -DPATH_TO_LLVM_ROOT=/root/.vim/bundle/YouCompleteMe/third_party/ycmd/clang_archives/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-14.04 . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 cmake --build . --target ycm_core --config Release
+
+5.compile regex
+cd ~
+mkdir regex_build
+cd regex_build
+cmake -G 'Unix Makefiles' . ~/.vim/plugged/YouCompleteMe/third_party/ycmd/third_party/cregex
+cmake --build . --target _regex --config Release
 
 5.配置.ycm_extra_conf.py
 cp ~/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py ~/.vim/
