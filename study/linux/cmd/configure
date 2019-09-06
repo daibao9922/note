@@ -1,3 +1,8 @@
 --prefix=xx
 指定安装目录
 
+--build=arm
+compile machine
+
+--host=xxx
+dest machine
