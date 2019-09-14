@@ -1,0 +1,2 @@
+equit to 
+open with O_WRONLY | O_CREAT | O_TRUNC
