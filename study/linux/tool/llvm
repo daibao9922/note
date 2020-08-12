@@ -1,0 +1,8 @@
+cmake \
+ -G "Unix Makefiles" \
+ -DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra;libcxx;libcxxabi" \
+ -DCMAKE_INSTALL_PREFIX="/home/local/llvm" \
+ -DLLVM_STATIC_LINK_CXX_STDLIB=OFF \
+ -DBUILD_SHARED_LIBS=OFF \
+ -DCMAKE_BUILD_TYPE=Release \
+ ../llvm
