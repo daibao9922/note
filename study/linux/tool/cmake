@@ -1,0 +1,2 @@
+1.生成compile_commands.json文件
+-DCMAKE_EXPORT_COMPILE_COMMANDS=YES
