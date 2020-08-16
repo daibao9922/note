@@ -2,6 +2,7 @@
 dnf install gcc
 dnf install ncurses-devel
 dnf install python-devel
+dnf install libX11-devel
 
 2.编译配置
 当前使用的配置命令：
