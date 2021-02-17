@@ -3,6 +3,7 @@ dnf install gcc
 dnf install ncurses-devel
 dnf install python-devel
 dnf install libX11-devel
+dnf install libXt-devel
 
 2.编译配置
 当前使用的配置命令：
@@ -10,10 +11,11 @@ dnf install libX11-devel
 --prefix=/home/local/vim \
 --with-features=huge \
 --enable-multibyte \
---enable-pythoninterp=yes \
+--enable-python3interp=yes \
 --enable-cscope
 
 备选项：
+--enable-pythoninterp=yes \
 --with-python-config-dir=/usr/lib/python2.7/config \
 --enable-python3interp=yes \
 --with-python3-config-dir=/usr/lib/python3.5/config \
